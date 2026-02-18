@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neurocore | Steve's Network</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .glow { text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00; }
+        .founder { font-style: italic; color: #888; margin-bottom: 30px; }
+        .btn-mine { background: none; border: 1px solid #00ff00; color: #00ff00; padding: 10px 20px; cursor: pointer; transition: 0.3s; }
+        .btn-mine:hover { background: #00ff00; color: #000; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="glow">NEUROCORE SINGULARITY</h1>
+        <p class="founder">Architect: Steve | Powered by AI</p>
+        
+        <div class="stats">
+            <div class="card"><h3>Live Price</h3><p id="price">/data/data/com.termux/files/usr/bin/bash.000420</p></div>
+            <div class="card"><h3>Market Status</h3><p>🟢 Bullish</p></div>
+            <div class="card"><h3>Network</h3><p>Mainnet V2.0</p></div>
+        </div>
+
+        <div class="live-feed">
+            <h2>Blockchain Activity</h2>
+            <div id="blocks" style="height: 200px; overflow-y: auto; font-size: 0.8em; color: #00cc00;">
+                <p>System Initialized... Waiting for Manual Block...</p>
+            </div>
+        </div>
+        <br>
+        <button class="btn-mine" onclick="alert('Connect your Termux Wallet to start mining!')">Connect Wallet</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
